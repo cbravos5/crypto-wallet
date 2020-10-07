@@ -1,0 +1,36 @@
+'pt-BR':
+  links:
+    show: Mostrar
+    edit: Editar
+    destroy: Apagar
+    language_pt: "Português BR"
+    language_en: "Inglês US"
+    new_coin: "Nova Moeda"
+    new_mining_type: "Novo Tipo de Mineração"
+    back: Voltar
+    
+  info:
+    lead: "Essa é a CryptoWallet, uma maneira de cadastrar e acompanahr suas moedas digitais"
+    choice: "Escolha uma das opções a baixo"
+    welcome: "Seja Bem-Vindo"
+  button:
+    coins: "Moedas"
+    mining_types: "Tipos de mineração"
+    
+  activerecord:
+    models:
+      coin:
+        one: Moeda
+        other: Moedas
+      mining_type:
+        one: Tipo de Mineração
+        other: Tipos de Mineração
+    attributes:
+      coin:
+        description: Descrição
+        acronym: Sigla
+        url_image: Imagem
+        mining_type: Tipo de Mineração
+      mining_type:
+        description: Descrição
+        acronym: Sigla

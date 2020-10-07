@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('info.welcome')%>!!!</h1>
+  <p><Strong>Date:</Strong> <%= I18n.l(Date.today) %></p>
+  <p class="lead"><%= t('info.lead') %></p>
+  <hr class="my-4">
+  <p><%= t('info.choice') %></p>
+  <a class="btn btn-primary btn-lg" <%= link_to t('button.coins'), coins_path %></a>
+      <a class="btn btn-primary btn-lg" <%= link_to t('button.mining_types'), mining_types_path %></a>
+</div>

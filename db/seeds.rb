@@ -1,0 +1,1 @@
+# Use dev:seed located in lib/tasks/dev.rake

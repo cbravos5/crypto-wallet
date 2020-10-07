@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+<h1><%= Coin.model_name.human(count: @coins.count) %></h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= @coins.human_attribute_name(:description) %></th>
+      <th><%= @coins.human_attribute_name(:acronym) %></th>
+      <th><%= @coins.human_attribute_name(:url_image) %></th>
+      <th><%= @coins.human_attribute_name(:mining_type) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coins.each do |coin| %>
+      <tr>
+        <td><%= coin.description %></td>
+        <td><%= coin.acronym %></td>
+        <td><%= image_tag coin.url_image, size: "33x25" %></td>
+        <td><%= coin.mining_type.acronym %></td>
+        <td><Strong><%= link_to t('links.show'), coin %></Strong></td>
+        <td><Strong><%= link_to t('links.edit'), edit_coin_path(coin) %></Strong></td>
+        <td><Strong><%= link_to t('links.destroy'), coin, method: :delete, data: { confirm: 'Are you sure?' } %></Strong></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('links.new_coin'), new_coin_path, type:"button", class:"btn btn-success" %>
+<%= link_to t('links.back'), welcome_index_path, type:"button", class:"btn btn-primary" %>
