@@ -16,10 +16,10 @@
     <div class="container-fluid">
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" <%= link_to t('links.language_pt'), root_path(locale: 'pt-BR') %> </a>
+          <a class="nav-link" <%= link_to t('links.language_pt'), locale: 'pt-BR' %> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" <%= link_to t('links.language_en'), root_path(locale: 'en') %></a>
+          <a class="nav-link" <%= link_to t('links.language_en'), locale: 'en' %></a>
         </li>
       </ul>
     <%= yield %>
